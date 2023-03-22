@@ -1,0 +1,12 @@
+<div class="flex flex-col">
+  <input
+    class="border rounded-md shadow max-w-xl p-2 mb-7 mx-auto"
+    placeholder="Search"
+    (input)="onQuery($event)"
+  />
+  <app-customer-card
+    *ngFor="let customer of customers"
+    [customer]="customer"
+    (delete)="delete($event)"
+  ></app-customer-card>
+</div>

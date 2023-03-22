@@ -2,15 +2,36 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CustomerCardComponent } from './customer-card/customer-card.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ListingRouteComponent } from './listing-route/listing-route.component';
+import { CreateRouteComponent } from './create-route/create-route.component';
+import { DetailRouteComponent } from './detail-route/detail-route.component';
+import { NavigationComponent } from './navigation/navigation.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { EditRouteComponent } from './edit-route/edit-route.component';
+import { DashboardRouteComponent } from './dashboard-route/dashboard-route.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomerCardComponent,
+    ListingRouteComponent,
+    CreateRouteComponent,
+    DetailRouteComponent,
+    NavigationComponent,
+    EditRouteComponent,
+    DashboardRouteComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

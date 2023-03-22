@@ -1,0 +1,65 @@
+<!-- post card -->
+<div
+  class="flex justify-center items-center bg-gray-50 shadow-lg rounded-lg mt-0 mb-4 md:mx-auto max-w-md md:max-w-2xl"
+>
+  <!--horizantil margin is just for display-->
+  <div class="flex items-start px-2 pl-0 pt-4 py-3">
+    <img
+      class="w-16 h-16 mr-4 shadow bg-gray-300 rounded-full"
+      [src]="
+        this.customer?.gender === 'male'
+          ? './assets/images/male.png'
+          : '/assets/images/female.png '
+      "
+      alt="avatar"
+    />
+    <div class="">
+      <div class="flex gap-48 items-center justify-between">
+        <h2 class="text-lg font-semibold text-gray-900 -mt-1">
+          {{ customer?.firstName + ' ' + customer?.lastName }}
+        </h2>
+        <small class="text-sm font-bold text-teal-900">{{
+          customer?.accountType
+        }}</small>
+      </div>
+      <div class="flex gap-48 items-center justify-between">
+        <p class="text-gray-700">{{ customer?.accountNumber }}</p>
+        <small class="text-sm font-bold text-teal-500">{{
+          customer?.amountOfMoney
+        }}</small>
+      </div>
+
+      <!-- phone number -->
+      <div
+        class="flex mr-2 gap-2 items-center content-between text-gray-700 text-sm mr-3"
+      >
+        <i class="fa-solid fa-phone text-teal-500"></i>
+        <span>{{ customer?.phoneNumber }}</span>
+      </div>
+
+      <div
+        class="flex mr-2 gap-2 items-center content-between text-gray-700 text-sm mr-3"
+      >
+        <i class="fa-solid fa-envelope text-teal-500"></i>
+        <span>{{ customer?.email }}</span>
+      </div>
+
+      <div class="mt-4 flex items-center justify-end">
+        <button
+          type="button"
+          class="focus:outline-none text-white bg-teal-500 hover:bg-teal-700 font-medium rounded-xl text-xs px-4 py-1 mr-2 mb-2 w-16"
+          (click)="onEdit()"
+        >
+          Edit
+        </button>
+        <button
+          type="button"
+          class="focus:outline-none text-white bg-gray-500 hover:bg-gray-700 font-medium rounded-xl text-xs px-4 py-1 mr-2 mb-2 w-16"
+          (click)="onDelete()"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

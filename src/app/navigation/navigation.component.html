@@ -1,0 +1,28 @@
+<div class="p-4 bg-gray-500 shadow">
+  <ul class="flex gap-6 justify-center">
+    <li>
+      <a
+        routerLink="/"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="text-red-500 underline"
+        >Custumers</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/create"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="text-red-500 underline"
+        >Add Customer</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/dashboard"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="text-red-500 underline"
+        >Dashboard</a
+      >
+    </li>
+  </ul>
+</div>
