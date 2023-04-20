@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
 import { CustomerCardComponent } from './customer-card/customer-card.component';
 import { CreateRouteComponent } from './create-route/create-route.component';
-import { DetailRouteComponent } from './detail-route/detail-route.component';
 import { ListingRouteComponent } from './listing-route/listing-route.component';
 import { EditRouteComponent } from './edit-route/edit-route.component';
 import { DashboardRouteComponent } from './dashboard-route/dashboard-route.component';

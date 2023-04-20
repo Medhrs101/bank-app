@@ -6,7 +6,6 @@ import { CustomerCardComponent } from './customer-card/customer-card.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ListingRouteComponent } from './listing-route/listing-route.component';
 import { CreateRouteComponent } from './create-route/create-route.component';
-import { DetailRouteComponent } from './detail-route/detail-route.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,10 +19,11 @@ import { DashboardRouteComponent } from './dashboard-route/dashboard-route.compo
     CustomerCardComponent,
     ListingRouteComponent,
     CreateRouteComponent,
-    DetailRouteComponent,
     NavigationComponent,
     EditRouteComponent,
     DashboardRouteComponent,
+    CustomerCardComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
